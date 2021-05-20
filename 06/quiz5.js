@@ -1,5 +1,5 @@
 const $box = document.getElementById('box');
-let  offset = {x: 0, y: 0};
+const  offset = {x: 0, y: 0};
 let isDown = false;
 
 $box.addEventListener('mousedown', (event) => {
@@ -20,7 +20,7 @@ $box.addEventListener('mousemove', (event) => {
     if(!isDown) return;
     console.log(event.clientX, event.clientY);
 
-    $box.style.left = event.clientX -;
+    $box.style.left = event.clientX -5;
     $box.style.top = event.clientY -10;
 
 });

@@ -1,14 +1,14 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
+    env: {
+        browser: true,
+        es2021: true
     },
-    "extends": [
-        "google"
+    extends:['eslint:recommended', 'airbnb-base' 
     ],
-    "parserOptions": {
-        "ecmaVersion": 12
+
+    parserOptions: {
+        ecmaVersion: 12
     },
-    "rules": {
+    rules: {
     }
 };
